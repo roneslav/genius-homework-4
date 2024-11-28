@@ -1,0 +1,45 @@
+.address-container {
+    display: flex;
+    gap: 32px;
+}
+
+.address {
+    padding-bottom: 96px;
+}
+
+.address-form {
+    padding: 48px 74px 32px;
+    width: 100%;
+    max-width: 423px;
+    border-radius: 32px;
+    background-color: var(--primary-text-color);
+    background-image: url('./../images/background.png');
+    background-repeat: no-repeat;
+}
+
+.address-text {
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--brand-white-color);
+}
+
+.blue-text {
+    color: var(--brand-dark-color);
+}
+
+.address-map {
+    flex-shrink: 0;
+    border: none;
+    border-radius: 32px;
+}
+
+.address-title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.address-title .accent {
+    color: var(--brand-dark-color);
+}

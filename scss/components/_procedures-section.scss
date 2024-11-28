@@ -1,0 +1,41 @@
+.procedures-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.procedures-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.procedure-card {
+    height: 456px;
+    /* max-width: 344px; */
+    background: linear-gradient(180.05deg,
+            rgba(1, 28, 68, 0) 48.53%,
+            rgba(1, 28, 68, 0.725825) 84.61%,
+            var(--primary-text-color) 101.39%);
+    transition: transform 0.3s;
+}
+
+.procedure-card:hover {
+    transform: scale(1.05);
+}
+
+.procedures-item {
+    flex-basis: calc((100% - 32px) / 3);
+}
+
+.procedures-title {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.procedures-title .accent {
+    color: var(--brand-dark-color);
+}

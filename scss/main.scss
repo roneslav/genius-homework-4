@@ -1,0 +1,28 @@
+@import './utils/fonts';
+@import './utils/varibles';
+@import './base';
+@import './utils/utils';
+
+@import './components/header';
+@import './components/hero-section';
+@import './components/about-section';
+@import './components/reasons-section';
+@import './components/procedures-section';
+@import './components/carousel-button';
+@import './components/contact-section';
+@import './components/footer';
+@import './components/modal-screen';
+@import './components/forms';
+
+.section {
+    padding: 48px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    /*1240px screen + 24px*2 padding = 1288px*/
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
