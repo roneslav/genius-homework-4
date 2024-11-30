@@ -1,0 +1,45 @@
+.reasons-section{
+    &__container {
+        /* height: 1785px; */
+        padding-top: 176px;
+        justify-content: center;
+        background: linear-gradient(-180deg,
+                rgba(43, 127, 255, 0.2) 39.74%,
+                rgba(43, 127, 255, 0) 54.16%,
+                rgba(43, 127, 255, 0) 66.66%);
+    }
+
+    &__context {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    &__title {
+        max-width: 432px;
+        font-size: 64px;
+        font-weight: 700;
+        margin-bottom: 48px;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: flex;
+        gap: 56px;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: space-between;
+    }
+
+    &__item {
+        flex-basis: calc((100% - 112px) / 3);
+    }
+
+}
+

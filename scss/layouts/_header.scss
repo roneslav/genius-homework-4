@@ -1,0 +1,56 @@
+.header {
+
+    &__container {
+        position: absolute;
+        width: 100%;            
+        top: 0;
+        left: 0;
+        /* padding-top: 32px; */
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.25);
+    }
+
+    &__nav {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        gap: 40px;
+    }
+    &__menu {
+        display: flex;
+        gap: 56px;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    &__link {
+        color: var(--primary-text-color);
+        font-weight: 400;
+        font-size: 18px;
+        font-family: 'Play', sans-serif;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    
+    &__link:hover {
+        color: var(--brand-dark-color);
+    }
+
+    &__social-menu {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+

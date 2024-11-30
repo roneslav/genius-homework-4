@@ -1,0 +1,28 @@
+.hero-section {
+    padding: 123px 0 126px 0;
+    background-image: url('./../images/hero-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    &__main-description {
+            margin-bottom: 16px;
+    }
+
+    &__main-title {
+    max-width: 529px;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    line-height: 0.8;
+    font-size: 140px;
+    font-weight: 700;
+    color: var(--brand-dark-color);
+    }
+
+    &__text-order {
+    color: var(--grey-color);
+    font-size: 12px;
+    line-height: 1.5;
+    }
+}
+

@@ -1,0 +1,65 @@
+.footer {
+    position: relative;
+    background-color: var(--primary-text-color);
+    background-image: url('./../images/footer-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 56px 0;
+
+    &::after {
+        position: absolute;
+        width: 247px;
+        height: 152px;
+        right: 0;
+        bottom: 0;
+        background-image: url('./../images/footer-decor-img.png');
+        background-repeat: no-repeat;
+        content: '';
+    }
+
+    &__container {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__nav,
+    &__address {
+        display: flex;
+        flex-basis: 50%;
+        flex-grow: 1;
+        gap: 20px;
+    }
+
+    &__logo,
+    &__menu {
+        flex-grow: 1;
+        padding: 0;
+    }
+
+    &__address-list,
+    &__address-info {
+        flex-grow: 1;
+        padding: 0;
+    }
+
+    &__link {
+        color: var(--brand-white-color);
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    &__link:hover {
+        color: var(--brand-dark-color);
+    }
+
+    &__data {
+        font-size: 13px;
+        color: var(--grey-color-dark);
+    }
+}
+
+
+
+
+

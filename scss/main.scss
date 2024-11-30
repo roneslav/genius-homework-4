@@ -2,27 +2,29 @@
 @import './utils/varibles';
 @import './base';
 @import './utils/utils';
+@import './utils/texts';
 
-@import './components/header';
-@import './components/hero-section';
-@import './components/about-section';
-@import './components/reasons-section';
-@import './components/procedures-section';
+@import './components/button-order';
 @import './components/carousel-button';
-@import './components/contact-section';
-@import './components/footer';
-@import './components/modal-screen';
 @import './components/forms';
+@import './components/form-button';
+@import './components/social-icons';
+@import './components/reasons-section__card';
+@import './components/procedures-section__card';
 
-.section {
-    padding: 48px 0;
-}
+@import './layouts/container';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/about-section';
+@import './layouts/reasons-section';
+@import './layouts/procedures-section';
+@import './layouts/contact-section';
+@import './layouts/footer';
+@import './layouts/modal-screen';
+@import './layouts/section';
 
-.container {
-    width: 100%;
-    max-width: 1288px;
-    /*1240px screen + 24px*2 padding = 1288px*/
-    margin: 0 auto;
-    padding: 0 24px;
-}
+
+
+
+
 

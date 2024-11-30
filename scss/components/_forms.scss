@@ -1,3 +1,12 @@
+.form-container {
+    max-width: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
 .form-field {
     margin-bottom: 24px;
 }
@@ -26,17 +35,6 @@
     color: var(--brand-white-color);
     font-size: 13px;
     line-height: 1.17;
-}
-
-.form-button {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto 8px;
-}
-
-.form-button.button-order {
-    max-width: 281px;
-    font-family: 'Roboto';
 }
 
 .form-terms {
