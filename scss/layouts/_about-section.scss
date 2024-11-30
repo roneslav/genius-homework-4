@@ -1,41 +1,72 @@
 .about-section {
     padding-top: 40px;
+    
 
     &__container {
         display: flex;
-        justify-content: space-between;
-        gap: 40px;
+        gap: 0;
+        width: 100%;
+
+        @media screen and (min-width: $bp-tablet) {
+            justify-content: space-between;
+            gap: 40px;
+        }
     }
 
     &__text {
-        flex-shrink: 0;
-        max-width: 709px;
-    }
+        max-width: 320px;
+        @media screen and (min-width: $bp-tablet) {
+            
+            flex-shrink: 0;
+                max-width: 709px;
+            }
+        }
 
+        
     &__title {
-        max-width: 529px;
-        font-weight: 700;
-        font-size: 64px;
-        margin-bottom: 42px;
+        max-width: 264px;
+        font-weight: 500;
+        font-size: 32px;
+        @media screen and (min-width: $bp-tablet) {
+            max-width: 529px;
+            font-size: 48px;
+            font-weight: 700;
+            font-size: 64px;
+            margin-bottom: 42px;
+        }
     }
 
     &__title .accent {
+
+
         color: var(--brand-dark-color);
         text-transform: capitalize;
     }
 
     &__paragraph {
-        margin-bottom: 40px;
-        line-height: 1.7;
-        font-size: 22px;
         font-weight: 400;
+        font-size: 18px;
+        line-height: 1.2;
+
+    @media screen and (min-width: $bp-tablet) {
+        font-size: 22px;
+        line-height: 1.7;
+    }
+
+        margin-bottom: 40px;
+        
+        
     }
 
     &__image {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
+        display: none;
+        
+        @media screen and (min-width: $bp-tablet) {
+            position: relative;                    
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            }
     }
 
     &__image-result {

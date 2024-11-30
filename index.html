@@ -60,6 +60,16 @@
               </a>
             </li>
           </ul>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg height="24" width="24">
+              <use href="./images/social-icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu">
+          <button class="mobile-menu__btn-close menu-btn-close" type="button">
+            Close
+          </button>
         </div>
       </div>
     </header>
@@ -68,12 +78,16 @@
         <div class="container">
           <p class="hero-section__main-description">Косметологічна клініка</p>
           <h1 class="hero-section__main-title">beauty zone</h1>
-          <button class="button-order modal-btn-open" type="button">
-            Замовити дзвінок
-          </button>
-          <p class="hero-section__text-order">
-            Запишись та отримай безкоштовну консультацію нашого косметолога
-          </p>
+          <div class="hero-section__button-container">
+            <button class="button-order modal-btn-open" type="button">
+              Замовити дзвінок
+            </button>
+          </div>
+          <div class="hero-section__text-container">
+            <p class="hero-section__text-order">
+              Запишись та отримай безкоштовну консультацію нашого косметолога
+            </p>
+          </div>
         </div>
       </section>
       <section class="about-section section" id="about-us-section">
@@ -111,7 +125,7 @@
           </div>
         </div>
       </section>
-      <section class="reasons-section section" id="reasons-section">
+      <!-- <section class="reasons-section section" id="reasons-section">
         <div class="container">
           <div class="reasons-section__container">
             <div class="reasons-section__context">
@@ -160,8 +174,8 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="procedures-section section" id="our-procedures-section">
+      </section> -->
+      <!-- <section class="procedures-section section" id="our-procedures-section">
         <div class="container">
           <h2 class="procedures-section__title">
             Наші <span class="accent">процедури</span>
@@ -205,8 +219,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="contact-section section" id="address-section">
+      </section> -->
+      <!-- <section class="contact-section section" id="address-section">
         <div class="container">
           <h2 class="contact-section__title">
             Як нас <span class="accent">знайти</span>
@@ -287,9 +301,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer__container">
           <nav class="footer__nav">
@@ -365,7 +379,7 @@
           </address>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <div class="backdrop is-hidden">
       <div class="modal">
@@ -442,5 +456,6 @@
       </div>
     </div>
     <script src="./js/module.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

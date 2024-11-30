@@ -1,4 +1,8 @@
 .header {
+    position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
 
     &__container {
         position: absolute;
@@ -21,10 +25,14 @@
         gap: 40px;
     }
     &__menu {
-        display: flex;
-        gap: 56px;
-        flex-grow: 1;
-        justify-content: center;
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: flex;
+            gap: 56px;
+            flex-grow: 1;
+            justify-content: center;
+        }
     }
 
     &__link {
@@ -41,8 +49,24 @@
     }
 
     &__social-menu {
-        display: flex;
-        gap: 30px;
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: flex;
+            gap: 30px;
+        }
+    }
+
+    &__burger {
+        background: transparent;
+        border: none;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        fill: var(--brand-white-color);
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
     }
 }
 
