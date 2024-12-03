@@ -1,12 +1,17 @@
 .reasons-section{
     &__container {
-        /* height: 1785px; */
-        padding-top: 176px;
-        justify-content: center;
+        padding-top: 16px;
         background: linear-gradient(-180deg,
-                rgba(43, 127, 255, 0.2) 39.74%,
-                rgba(43, 127, 255, 0) 54.16%,
-                rgba(43, 127, 255, 0) 66.66%);
+                    rgba(43, 127, 255, 0.2) 39.74%,
+                    rgba(43, 127, 255, 0) 54.16%,
+                    rgba(43, 127, 255, 0) 66.66%);
+        
+        @media screen and (min-width: $bp-tablet) {
+            padding-top: 176px;
+            justify-content: center;
+            
+            
+        }
     }
 
     &__context {
@@ -16,29 +21,56 @@
     }
 
     &__title {
-        max-width: 432px;
-        font-size: 64px;
-        font-weight: 700;
-        margin-bottom: 48px;
+        max-width: 210px;
+        margin-bottom: 16px;
         flex-grow: 1;
+        font-weight: 500;
+        font-size: 32px;
+        font-family: 'Roboto';
         text-align: center;
+        @media screen and (min-width: $bp-tablet) {
+            max-width: 432px;
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 48px;
+        }
     }
 
     &__menu {
-        display: flex;
-        justify-content: space-between;
+        flex-grow: 1;
+        justify-content: center;
+        @media screen and (min-width: $bp-tablet) {
+            justify-content: space-between;
+            
+        }
+        
     }
 
     &__list {
         display: flex;
-        gap: 56px;
+        flex-direction: column;
+        align-items: center;
         flex-wrap: wrap;
-        flex-grow: 1;
-        justify-content: space-between;
+        gap: 16px;
+        padding: 0 20px;
+        @media screen and (min-width: $bp-tablet) {
+            display: flex;
+            flex-direction: row;
+            gap: 56px;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            justify-content: space-between;
+            padding: 0;
+        }
+        
     }
 
     &__item {
-        flex-basis: calc((100% - 112px) / 3);
+        max-width: 316px;
+        @media screen and (min-width: $bp-tablet) {
+            flex-basis: calc((100% - 112px) / 3);
+            
+        }
     }
 
 }
