@@ -1,27 +1,37 @@
 .procedures-section {
 
     &__title {
-        font-size: 64px;
-        font-weight: 700;
+        font-size: 32px;
+        font-weight: 500;
         margin-bottom: 48px;
         text-align: center;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 64px;
+            font-weight: 700;
+        }
     }
 
-    &__container {
+    &__slider {
         display: flex;
         gap: 32px;
         align-items: center;
     }
 
-    &__list {
-        display: flex;
-        gap: 16px;
-        flex-wrap: wrap;
-        padding: 0;
+    &__container {
+        overflow: hidden;
     }
 
-    &__item {
-        flex-basis: calc((100% - 32px) / 3);
+    &__list {
+        margin-bottom: 32px;
+    }
+
+    &__button {
+        display: none;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: flex;
+            
+        }
     }
 }
-

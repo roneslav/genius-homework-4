@@ -1,0 +1,36 @@
+// .pagination {
+//     display: flex;
+//     align-items: center;
+//     gap: 24px;
+
+//     &__button {
+//         width: 12px;
+//         height: 12px;
+//         background-color: var(--grey-color-dark);
+//         border-radius: 50%;
+//         padding: 0;
+
+//         &--active {
+//             background-color: var(--brand-dark-color);
+//         }
+//     }
+// }
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+
+    &__button {
+        width: 12px;
+        height: 12px;
+        padding: 0;
+        background-color: var(--grey-color-dark);
+        border-radius: 50%;
+
+        &--active {
+            background-color: var(--brand-dark-color);
+        }
+    }
+}

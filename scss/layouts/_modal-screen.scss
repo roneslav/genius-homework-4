@@ -4,7 +4,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 20px 0;
+    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,6 +33,10 @@
     overflow-y: auto;
     background-image: url('./../images/background.png');
 
+    @media screen and (min-width: $bp-tablet) {
+        padding: 42px 144px;
+    }
+
     &__container {
     max-width: 435px;
     display: flex;
@@ -43,24 +47,38 @@
     }
 
     &__title {
-        font-weight: 700;
-        font-size: 64px;
+        font-weight: 500;
+        font-size: 32px;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-weight: 700;
+            font-size: 64px;
+        }
     }
 
     &__text {
         margin: 0 auto;
         max-width: 310px;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 22px;
         text-align: center;
         align-items: center;
 
+        @media screen and (min-width: $bp-tablet) {
+            font-weight: 600;
+            font-size: 22px;
+        }
     }
 
     &__btn-close {
         position: absolute;
         top: 42px;
         right: 42px;
+        // background-color: transparent;
+    }
+
+    &__button-crest {
+        fill: var(--brand-white-color);
     }
 }
 

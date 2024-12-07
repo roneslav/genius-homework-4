@@ -5,3 +5,14 @@
 .blue-text {
     color: var(--brand-dark-color);
 }
+
+.caps-letter {
+    text-transform: capitalize;
+    
+    font-weight: 700;
+
+    @media screen and (min-width: $bp-tablet) {
+        font-weight: 600;
+        
+    }
+}

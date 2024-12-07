@@ -20,15 +20,30 @@
 
     &__container {
         display: flex;
+        flex-direction: column;
         gap: 20px;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            
+        }
     }
 
     &__nav,
     &__address {
+        text-align: center;
         display: flex;
-        flex-basis: 50%;
+        flex-direction: column;
+        
         flex-grow: 1;
         gap: 20px;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-basis: 50%;
+            flex-direction: row;
+            text-align: left;
+            
+        }
     }
 
     &__logo,
@@ -51,6 +66,10 @@
 
     &__link:hover {
         color: var(--brand-dark-color);
+    }
+
+    &__socials {
+        fill: var(--brand-white-color);
     }
 
     &__data {
